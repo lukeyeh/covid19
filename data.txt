@@ -1,0 +1,77 @@
+deaths.csv
+|    | CATEGORY               |   NUMBER OF CONFIRMED CASES |
+|----|------------------------|-----------------------------|
+|  0 | Attributed to COVID-19 |                         260 |
+long_term_care.csv
+|    | CATEGORY                                                          |   NUMBER OF CONFIRMED CASES |
+|----|-------------------------------------------------------------------|-----------------------------|
+|  0 | Residents/Healthcare workers of Long-Term Care Facilities         |                         835 |
+|  1 | Long-Term Care Facilities Reporting At Least One Case of COVID-19 |                         119 |
+county.csv
+|    | CATEGORY   |   NUMBER OF CONFIRMED CASES |
+|----|------------|-----------------------------|
+|  0 | Barnstable |                         383 |
+|  1 | Berkshire  |                         268 |
+|  2 | Bristol    |                         722 |
+|  3 | Dukes      |                           8 |
+|  4 | Essex      |                        1653 |
+|  5 | Franklin   |                         107 |
+|  6 | Hampden    |                         889 |
+|  7 | Hampshire  |                         147 |
+|  8 | Middlesex  |                        2950 |
+|  9 | Nantucket  |                           9 |
+| 10 | Norfolk    |                        1382 |
+| 11 | Plymouth   |                        1067 |
+| 12 | Suffolk    |                        2929 |
+| 13 | Worcester  |                        1077 |
+| 14 | Unknown    |                         246 |
+labs.csv
+|    | Laboratory                                 |   Total Patients Positive |   Total Patients Tested |
+|----|--------------------------------------------|---------------------------|-------------------------|
+|  0 | MA State Public Health Laboratory          |                      1133 |                    8091 |
+|  1 | ARUP Laboratories                          |                        17 |                     186 |
+|  2 | Baystate Medical Center                    |                        31 |                     124 |
+|  3 | Bedford Research Foundation                |                        48 |                     341 |
+|  4 | Beth Israel Deaconess Medical Center       |                      1024 |                    5522 |
+|  5 | BioReference Laboratories                  |                        16 |                      51 |
+|  6 | Boston Medical Center                      |                       461 |                    1045 |
+|  7 | BROAD Institute CRSP                       |                       962 |                    4301 |
+|  8 | Centers for Disease Control and Prevention |                         1 |                      10 |
+|  9 | Children’s Hospital Boston                 |                        16 |                     264 |
+| 10 | East Side Clinical Laboratory              |                        16 |                     109 |
+| 11 | Genesys Diagnostics                        |                       151 |                     283 |
+| 12 | LabCorp                                    |                      1211 |                    6352 |
+| 13 | Mayo Clinic Labs                           |                       422 |                    2202 |
+| 14 | Orig3n                                     |                        16 |                      40 |
+| 15 | Partners Healthcare                        |                      1124 |                    5427 |
+| 16 | Quest Laboratories                         |                      6103 |                   36579 |
+| 17 | Signature Healthcare                       |                        10 |                      17 |
+| 18 | South Shore Hospital                       |                        17 |                      90 |
+| 19 | Steward Health Care                        |                       115 |                     249 |
+| 20 | Tufts Medical Center                       |                       712 |                    3229 |
+| 21 | UMASS Memorial Medical Center              |                        97 |                     573 |
+| 22 | VA Boston Healthcare System                |                        13 |                      14 |
+| 23 | Viracor                                    |                        76 |                    1225 |
+| 24 | Other                                      |                        45 |                     105 |
+age_group.csv
+|    | CATEGORY           |   NUMBER OF CONFIRMED CASES |
+|----|--------------------|-----------------------------|
+|  0 | ≤19 years of age   |                         312 |
+|  1 | 20-29 years of age |                        1876 |
+|  2 | 30-39 years of age |                        2217 |
+|  3 | 40-49 years of age |                        2245 |
+|  4 | 50-59 years of age |                        2685 |
+|  5 | 60-69 years of age |                        1922 |
+|  6 | 70-79 years of age |                        1210 |
+|  7 | ≥ 80 years of age  |                        1370 |
+sex.csv
+|    | CATEGORY   |   NUMBER OF CONFIRMED CASES |
+|----|------------|-----------------------------|
+|  0 | Female     |                        7249 |
+|  1 | Male       |                        6552 |
+|  2 | Unknown    |                          36 |
+hospitalization.csv
+|    | CATEGORY                     |   NUMBER OF CONFIRMED CASES |
+|----|------------------------------|-----------------------------|
+|  0 | Patient was hospitalized     |                        1241 |
+|  1 | Patient was not hospitalized |                        3942 |
