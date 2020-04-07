@@ -1,6 +1,8 @@
-.docx
+*.docx
 __pycache__
 data/
 data.md
 email_list.txt
 password.txt
+*.swp
+
