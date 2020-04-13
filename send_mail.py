@@ -3,19 +3,18 @@ import ssl
 import subprocess
 import schedule
 import time
-from datetime import datetime
+import re
+import requests
 
-from parse_doc import process_data
+from datetime import datetime
+from bs4 import BeautifulSoup
+from get_data import find_cases
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
-import re
-import requests
-from bs4 import BeautifulSoup
-from get_data import find_cases
 
 def crawl():
     req = requests.get("https://www.amherstma.gov/3519/")
