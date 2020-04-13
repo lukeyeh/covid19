@@ -13,32 +13,24 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 
+import re
+import requests
+from bs4 import BeautifulSoup
+from get_data import find_cases
+
+def crawl():
+    req = requests.get("https://www.amherstma.gov/3519/")
+    soup = BeautifulSoup(req.text, "html.parser")
+    return soup
+
 
 def get_email_message(sender_email, receiver_email):
 
     message = MIMEMultipart("alternative")
-    message["Subject"] = daily_digest()
+
+    message["Subject"] = str(find_cases(crawl())) 
     message["From"] = sender_email
     message["To"] = receiver_email
-
-    file1 = open("data.md", "w")
-    file1.write(all_tables())
-    file1.close()
-
-    filename = "data.md"
-
-    with open(filename, "rb") as attachment:
-        part = MIMEBase("application", "octet-stream")
-        part.set_payload(attachment.read())
-
-    encoders.encode_base64(part)
-
-    part.add_header(
-        "Content-Disposition",
-        f"attachment; filename= {filename}",
-    )
-
-    message.attach(part)
 
     body = "bot by yours truly Luke Yeh"
     message.attach(MIMEText(body, "plain"))
