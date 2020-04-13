@@ -5,7 +5,6 @@ import schedule
 import time
 from datetime import datetime
 
-from thing import daily_digest, all_tables, today
 from parse_doc import process_data
 
 from email.mime.text import MIMEText
@@ -39,10 +38,6 @@ def get_email_message(sender_email, receiver_email):
 
 
 def send_mail():
-    print("sending")
-    rc = subprocess.call("./download.sh", shell=True)
-    process_data(today() + ".docx", save=True)
-
     port = 465 
 
     context = ssl.create_default_context()
