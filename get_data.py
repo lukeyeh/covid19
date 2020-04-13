@@ -1,6 +1,6 @@
 import re
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
 URL = "https://www.amherstma.gov/3519/"
 CASESTRINGS = ['Amherst Total Cases', 'Hampshire County Cases', 'Massachusetts']
